@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    font-family: Roboto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 320px;
+}
+
+.nav{
+    display: flex;
+    gap: 30px;
+}
+
+.logo img{
+   height: 35px;   
+  width: auto;   
+  display: block;
+}
+
+.nav a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #000;
+}
+
+.btn {
+  background: #8b5cf6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+     line-height: 0.5;
+}
+
+.images{
+    display: flex;
+    margin: 300px 110px;
+}
+
+
+.img1{
+    transform: translateY(360px);
+}
+
+.img3{
+    transform: translateY(100px);
+}
+.img1 img { width: 100pxpx; }
+.img2 img { width: 600px; }
+.img3 img { width: 200px; }
+
+.fixflow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p_fixflow{
+  margin: 10px;
+  font-size: 20px;
+}
+
+.looking{
+  margin: 50px 150px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 200px 0px;
+}
+
+.btn2__link {
+  background: #8b5cf6;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.low{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.burger{
+  width: 300px;
+  object-fit: cover;
+}
+
+.lowis{
+  font-size: 300px;
+}
+
+.why{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0px 0px 0px 100px;
+  font-size: 20px;
+}
+
+.why_t
+{
+  margin: 10px;
+}
+
+.why_big{
+  display: flex;
+  margin-left: auto;
+  justify-content: right;
+  text-align: right;
+  font-size: 50px;
+  width: 500px;
+  margin:0px 0px 100px 500px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  padding: 60px 60px;
+}
+
+.card
+{
+  background: white;
+  display: flex;
+  flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 50px;
+     transition: transform 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-20px);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customization .icon {
+  background: #85baff;
+}
+
+.pricing .icon {
+  background: #8effb5; 
+}
+
+.experts .icon {
+  background: #c188ff; 
+}
+.experience .icon {
+  background: #ffd787; 
+}
+
+.card.customization {
+  background: #e0f0ffa5;
+}
+
+.card.pricing {
+  background: #e0ffe0a6; 
+}
+
+.card.experts {
+  background: #f0e0ffa5; 
+}
+
+.card.experience {
+  background: #fff5e0a5; 
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .btn {
+    align-self: center;
+  }
+
+  .h1 h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .images {
+    flex-direction: column;
+    margin: 50px 20px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .img1 img,
+  .img2 img,
+  .img3 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transform: translateY(0); 
+  }
+
+  .fixflow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .p_fixflow {
+    font-size: 18px;
+  }
+
+  .looking {
+    font-size: 24px;
+    margin: 30px 20px;
+    text-align: center;
+  }
+
+  .btn2__link {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+
+  .low {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .lowis {
+    font-size: 120px;
+    text-align: center;
+  }
+
+  .burger {
+    width: 200px;
+  }
+
+  .why {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .why_big {
+    width: 90%;
+    margin: 20px auto 60px auto;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .features {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+
+  .card__text {
+    font-size: 14px;
+  }
+}
+
+ 
+
